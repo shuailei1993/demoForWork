@@ -1,0 +1,19 @@
+spring:
+  application:
+    name: cache
+  cloud:
+    config:
+      enabled: true  #开启服务查找
+      discovery:
+        service-id: CONFIGSERVER  #configServer在eureka中的名字
+      label: master  #分支
+      profile: '@profileActive@'  #配置文件后缀名（local）
+
+
+
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:20000/eureka
+  instance:
+    ip-address: true

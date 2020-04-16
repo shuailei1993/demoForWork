@@ -1,0 +1,7 @@
+server:
+  port: 11000
+spring:
+  profiles:
+    active: '@profileActive@'
+  application:
+    name: configServer
